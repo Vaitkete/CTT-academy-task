@@ -10,8 +10,8 @@ def test_find_maximum_distance_1():
 
 def test_find_maximum_distance_2():
     assert task.find_maximum_distance(
-        number_of_cities=178, cities_with_train_station=[90, 17, 87, 175, 15, 1, 29]
-    ) == 42
+        number_of_cities=223, cities_with_train_station=[90, 17, 87, 175, 15, 1, 29]
+    ) == 47
 
 
 def test_find_maximum_distance_3():
@@ -24,6 +24,12 @@ def test_find_maximum_distance_4():
     assert task.find_maximum_distance(
         number_of_cities=5, cities_with_train_station=[2, 3, 4]
     ) == 2
+
+
+def test_find_maximum_distance_4():
+    assert task.find_maximum_distance(
+        number_of_cities=13, cities_with_train_station=[4, 11]
+    ) == 4
 
 
 def test_city_negative_number():
